@@ -1,4 +1,0 @@
-﻿  HookingManager.cpp
-C:\Users\Tzach Desktop\Desktop\OpTeaMonitor\Hooking\Project1\Project1\HookingManager.cpp(57): warning C4715: 'HookingManager::UninstallHook': not all control paths return a value
-     Creating library C:\Users\Tzach Desktop\Desktop\OpTeaMonitor\Hooking\Project1\Debug\HookingManager.lib and object C:\Users\Tzach Desktop\Desktop\OpTeaMonitor\Hooking\Project1\Debug\HookingManager.exp
-  Project1.vcxproj -> C:\Users\Tzach Desktop\Desktop\OpTeaMonitor\Hooking\Project1\Debug\HookingManager.dll
