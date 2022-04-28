@@ -13,8 +13,12 @@ private:
 	static HookingManager* hManager;
 	void* srcFunction;
 	void* dstFunction;
+	uintptr_t* savedMemory;
 
-	HookingManager(void* srcFunction, void* dstFunction) {
+	HookingManager(void* srcFunction, void* dstFunction, int additionVirtualMemory = 5) {
+		this->savedMemory = (uintptr_t*)malloc(sizeof(uintptr_t) * additionVirtualMemory);
+		if (!this->savedMemory)
+			cout << "Error allocation new memory!!\n";
 		this->srcFunction = srcFunction;
 		this->dstFunction = dstFunction;
 	}
@@ -43,6 +47,7 @@ public:
 	}
 
 	bool InstallHook32(int additionVirtualMemory = JMP32_SIZE);
+	bool UninstallHook32(int additionVirtualMemory = JMP32_SIZE);
 	void* TrampHook32(const intptr_t additionVirtualMemory = JMP32_SIZE);
 };
 
