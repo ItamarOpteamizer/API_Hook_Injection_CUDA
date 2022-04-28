@@ -1,5 +1,6 @@
 #include "Dog.h"
 
 void Dog::goToPark() {
-	cout << "Dog is in the park!";
+	cout << "Check ... Check ...\n";
+	cout << "Dog is in the park!\n";
 }
